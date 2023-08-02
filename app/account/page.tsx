@@ -64,15 +64,12 @@ export default async function Account() {
   };
 
   return (
-    <section className="mb-32 bg-black">
+    <section className="mb-32 bg-white">
       <div className="max-w-6xl px-4 py-8 mx-auto sm:px-6 sm:pt-24 lg:px-8">
         <div className="sm:align-center sm:flex sm:flex-col">
-          <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
+          <h1 className="text-4xl font-extrabold text-black sm:text-center sm:text-6xl">
             Account
           </h1>
-          <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
-            We partnered with Stripe for a simplified billing.
-          </p>
         </div>
       </div>
       <div className="p-4">
@@ -116,7 +113,7 @@ export default async function Account() {
               <input
                 type="text"
                 name="name"
-                className="w-1/2 p-3 rounded-md bg-zinc-800"
+                className="w-1/2 p-3 rounded-md bg-white-800"
                 defaultValue={userDetails?.full_name ?? ''}
                 placeholder="Your name"
                 maxLength={64}
@@ -149,7 +146,7 @@ export default async function Account() {
               <input
                 type="text"
                 name="email"
-                className="w-1/2 p-3 rounded-md bg-zinc-800"
+                className="w-1/2 p-3 rounded-md bg-white-800"
                 defaultValue={user ? user.email : ''}
                 placeholder="Your email"
                 maxLength={64}
@@ -177,7 +174,7 @@ function Card({ title, description, footer, children }: Props) {
         <p className="text-zinc-300">{description}</p>
         {children}
       </div>
-      <div className="p-4 border-t rounded-b-md border-zinc-700 bg-zinc-900 text-zinc-500">
+      <div className="p-4 border-t rounded-b-md border-zinc-700 bg-white-900 text-zinc-500">
         {footer}
       </div>
     </div>
